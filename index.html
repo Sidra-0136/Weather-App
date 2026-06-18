@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>WEATHER WEBPAGE</title>
+</head>
+
+<body>
+  <div class="weather-card">
+    <div class="header">
+      <h1>Hello Weather</h1>
+      <img src="" id="weather-icon" alt="weather icon" />
+    </div>
+    
+    <form onsubmit="getWeather(event)">
+      <input id="city-input" class="button-84" type="text" placeholder="enter your city here" />
+    </form>
+    <h1 id="temp-result"></h1>
+    
+    <div class="weather-details">
+      
+        <h2>Humidity</h2>
+        <h3 id="humidity-result"></h3>
+        <h2>Wind Speed</h2>
+        <h3 id="wind-result"></h3>
+        <h2>Precipitation</h2>
+      <h3 id="precipitation-percentage"></h3>
+    </div>
+  </div>
+  
+  
+  <audio id="sparrow-chirping" src="./bird chirping.wav"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.17.0/dist/axios.min.js">
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
