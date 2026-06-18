@@ -91,13 +91,3 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
-/* This handles EVERY screen larger than a mobile phone (Tablets, MacBooks, Laptops) */
-@media (min-width: 600px) {
-  
-  .weather-card {
-  width: 90%;
-  height: 70%;
-  }
-
-}
