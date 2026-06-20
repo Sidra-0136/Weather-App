@@ -1,6 +1,6 @@
 # 🌦️ Weather App
 
-A minimalist and responsive web application that delivers real-time weather insights for any location.
+A minimalist web application that delivers real-time weather insights for any location.
 
 ## ✨ Key Features
 * **Search Functionality:** Features an intuitive search input field allowing users to look up a location and instantly retrieve real-time data.
