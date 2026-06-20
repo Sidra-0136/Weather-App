@@ -10,24 +10,27 @@
 
 <body>
   <div class="weather-card">
-    <div class="header">
-      <h1>Hello Weather</h1>
-      <img src="" id="weather-icon" alt="weather icon" />
-    </div>
+     <h1>Hello Weather</h1>
     
     <form onsubmit="getWeather(event)">
       <input id="city-input" class="button-84" type="text" placeholder="enter your city here" />
+      <button class="button-14" type="submit">Get Weather</button>
     </form>
-    <h1 id="temp-result"></h1>
+    
+    <div class="header">
+      <img src="" id="weather-icon" alt="weather icon" />
+      <h3 id="weather-term"></h3>
+    </div>
+    
+    <div class="temperature">
+      <h2 id="temp-result"></h2>
+    <p id="fl-result" class="feelslike"></p>
+    </div>
     
     <div class="weather-details">
-      
-        <h2>Humidity</h2>
-        <h3 id="humidity-result"></h3>
-        <h2>Wind Speed</h2>
-        <h3 id="wind-result"></h3>
-        <h2>Precipitation</h2>
-      <h3 id="precipitation-percentage"></h3>
+      <h4 id="humidity-result"></h4>
+      <h4 id="wind-result"></h4>
+      <h4 id="precipitation-percentage"></h4>
     </div>
   </div>
   

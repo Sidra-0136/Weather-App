@@ -16,21 +16,18 @@ async function getWeather(event) {
   console.log("temperature:", response.data.current.temp_c)
   
   document.querySelector('#temp-result').innerHTML = `${temperature}°C`
-  
+  let fl = response.data.current.feelslike_c;
+  let term = response.data.current.condition.text;
   let humidity = response.data.current.humidity;
-let windSpeed = response.data.current.wind_kph;
-let icon = response.data.current.condition.icon;
-let precipitation = response.data.current.chance_of_rain;
+  let windSpeed = response.data.current.wind_kph;
+  let icon = response.data.current.condition.icon;
+  let precipitation = response.data.current.chance_of_rain;
 
-document.querySelector('#humidity-result').innerHTML = `${humidity}%`;
-document.querySelector('#wind-result').innerHTML = `${windSpeed} kph`;
-document.querySelector('#weather-icon').src = `https:${icon}`
-document.querySelector('#weather-icon').style.display = 'inline-block';
-document.querySelector('#precipitation-percentage').innerHTML = `${precipitation}%`
+document.querySelector('#fl-result').innerHTML = `Feels like ${fl}°C`
+document.querySelector('#weather-term').innerHTML = `${term}`
+  document.querySelector('#humidity-result').innerHTML = `Humidity: ${humidity}%`;
+  document.querySelector('#wind-result').innerHTML = `Windspeed: ${windSpeed} kph`;
+  document.querySelector('#weather-icon').src = `https:${icon}`
+  document.querySelector('#weather-icon').style.display = 'inline-block';
+  document.querySelector('#precipitation-percentage').innerHTML = `Precipitation: ${precipitation}%`
 }
-
-
-
-
-
-
